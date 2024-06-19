@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raffle</title>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/icon.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./AboutUS.html">AboutUS</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./information.html">More Information</a>
+        <a href="./benefitsTips.html">Benefits & Tips</a>
+        <a class="active" href="./raffle.html">Raffle</a>
+      </nav>
+
+      <img src="../assets/img/logo.png" alt="logo" />
+    </header>
+    <div class="content">
+      <h1>Raffle</h1>
+      <p class="raffle-d">
+        You can collaborate to hold an exhibition event and participate in a raffle to win an easel
+      </p>
+
+      <section class="container-flex">
+        <aside>
+          <h2>location</h2>
+
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d846586.8541780006!2d-119.06972658375552!3d34.018726908797014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1718763535962!5m2!1ses!2sco"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </aside>
+
+        <form action="./show_data.html" method="get">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" />
+
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" />
+
+          <label for="choose">Choose Meet or Zoom</label>
+          <select id="choose" name="choose">
+            <option selected disabled>Choose</option>
+            <option value="meet">Meet</option>
+            <option value="zoom">Zoom</option>
+          </select>
+
+          <label for="date">Choose Date</label>
+          <input type="date" id="date" name="date" />
+
+          <label for="payment">Payment Options</label>
+          <span>
+            <input type="radio" id="cash" value="cash" name="payment" />
+            <label for="cash">Cash</label>
+          </span>
+          <span>
+            <input type="radio" id="credit" value="credit" name="payment" />
+            <label for="credit">Credit Card</label>
+          </span>
+          <span>
+            <input type="radio" id="debit" value="debit" name="payment" />
+            <label for="debit">Debit Card</label>
+          </span>
+
+          <label for="message">Message(Optional)</label>
+          <textarea name="message" id="message"></textarea>
+          <span>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I accept terms and conditions</label>
+            <button type="submit">send</button>
+          </span>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>Created By: Daniel Samboni</p>
+    </footer>
+  </body>
+</html>
